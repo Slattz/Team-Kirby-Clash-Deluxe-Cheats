@@ -21,6 +21,7 @@ void    assign_region(u32 region)
 		g_firef -= USA_DIFFERENCE;
 		g_waterf -= USA_DIFFERENCE;
 		g_lightf -= USA_DIFFERENCE;
+		g_raref -= USA_DIFFERENCE;
 		break;
 		
 		/*
