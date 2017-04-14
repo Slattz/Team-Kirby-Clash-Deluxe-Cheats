@@ -1,4 +1,3 @@
-#Team-Kirby-Clash-Deluxe-Plugin
 This is a cheats plugin for  on 3DS. This plugin currently only supports USA & EUR.
 
 How To Use:
