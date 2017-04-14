@@ -1,3 +1,5 @@
+# Team Kirby Clash Deluxe NTR Cheats Plugin
+
 This is a cheats plugin for  on 3DS. This plugin currently only supports USA & EUR.
 
 How To Use:
