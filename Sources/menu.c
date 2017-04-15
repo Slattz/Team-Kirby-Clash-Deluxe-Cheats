@@ -123,19 +123,19 @@ void    my_menus(void)
     if (tid == 0x1ab900)
     {
 		assign_region(EUR);
-		new_unselectable_entry("Kirby Crash Deluxe Cheats v1.0 EUR");
+		new_unselectable_entry("Team Kirby:CD Cheats v1.1 EUR");
     }
 	
 	else if (tid == 0x1ab800)
     {
 		assign_region(USA);
-		new_unselectable_entry("Kirby Crash Deluxe Cheats v1.0 USA");
+		new_unselectable_entry("Team Kirby:CD Cheats v1.1 USA");
     }
 	
 	/*else if (tid == 0x1abX00)
     {
 		assign_region(JAP);
-		new_unselectable_entry("Kirby Crash Deluxe Cheats v1.0 JAP");
+		new_unselectable_entry("Team Kirby:CD Cheats v1.1 JAP");
     }*/
 	
 	
