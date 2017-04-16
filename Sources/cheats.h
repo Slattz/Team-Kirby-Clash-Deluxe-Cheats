@@ -27,14 +27,14 @@
 
 
 #define		USA_DIFFERENCE			0x1C20
-//#define		JAP_DIFFERENCE			0x0
+#define		JAP_DIFFERENCE			0x3BE0
 
 
 enum
 {
     EUR = 0,
-    USA/*,
-    JAP*/
+    USA,
+    JAP
 };
 
 /*

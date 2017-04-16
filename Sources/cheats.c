@@ -24,10 +24,13 @@ void    assign_region(u32 region)
 		g_raref -= USA_DIFFERENCE;
 		break;
 		
-		/*
-        case JAP:
-		g_apples += JAP_DIFFERENCE;
-        break;*/
+		case JAP:
+		g_apples -= JAP_DIFFERENCE;
+		g_firef -= JAP_DIFFERENCE;
+		g_waterf -= JAP_DIFFERENCE;
+		g_lightf -= JAP_DIFFERENCE;
+		g_raref -= JAP_DIFFERENCE;
+		break;
     }
 }
 

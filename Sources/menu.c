@@ -123,20 +123,20 @@ void    my_menus(void)
     if (tid == 0x1ab900)
     {
 		assign_region(EUR);
-		new_unselectable_entry("Team Kirby:CD Cheats v1.1 EUR");
+		new_unselectable_entry("Team Kirby:CD Cheats v1.2 EUR");
     }
 	
 	else if (tid == 0x1ab800)
     {
 		assign_region(USA);
-		new_unselectable_entry("Team Kirby:CD Cheats v1.1 USA");
+		new_unselectable_entry("Team Kirby:CD Cheats v1.2 USA");
     }
 	
-	/*else if (tid == 0x1abX00)
+	else if (tid == 0x1ab000)
     {
 		assign_region(JAP);
-		new_unselectable_entry("Team Kirby:CD Cheats v1.1 JAP");
-    }*/
+		new_unselectable_entry("Team Kirby:CD Cheats v1.2 JAP");
+    }
 	
 	
 	else
@@ -146,7 +146,7 @@ void    my_menus(void)
 		new_unselectable_entry("Following TitleIDs:");
 		new_unselectable_entry("00040000001ab900 (EUR)");
 		new_unselectable_entry("00040000001ab800 (USA)");
-		//new_unselectable_entry("0004000000054100 (JAP)");
+		new_unselectable_entry("00040000001ab000 (JAP)");
 		
         return;
     }
