@@ -21,7 +21,7 @@ def allFolderFile(pattern, ext):
 
 EUR_TID 	= "00040000001AB900"
 USA_TID 	= "00040000001AB800"
-JAP_TID		= "00040000001AB000"
+JAP_TID		= "00040000001A0000"
 NAME 		= "Kirby-C-Deluxe"
 FTP_FOLDER	= "./plugin/" + EUR_TID + "/"
 HOST		= "192.168.1.31"
