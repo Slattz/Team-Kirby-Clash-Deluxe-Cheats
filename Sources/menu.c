@@ -1,4 +1,5 @@
 #include "cheats.h"
+#include "notes.h"
 
 #define ENTRY_COUNT 300
 
@@ -68,6 +69,7 @@ char    fireF_level_buffer[40] = "Current Fire Fragments: ";
 char    waterF_level_buffer[40] = "Current Water Fragsments: ";
 char    lightF_level_buffer[40] = "Current Light Fragsments: ";
 char    rareF_level_buffer[40] = "Current Rare Fragsments: ";
+char    BookLVL_level_buffer[40] = "Current Codex Levels: ";
 int     g_increase_menu_index1 = 0;
 int     g_decrease_menu_index1 = 0;
 int     g_increase_menu_index2 = 0;
@@ -78,6 +80,8 @@ int     g_increase_menu_index4 = 0;
 int     g_decrease_menu_index4 = 0;
 int     g_increase_menu_index5 = 0;
 int     g_decrease_menu_index5 = 0;
+int     g_increase_menu_index6 = 0;
+int     g_decrease_menu_index6 = 0;
 
 static inline void  smenu(void)
 {
@@ -85,32 +89,52 @@ static inline void  smenu(void)
         new_unselectable_entry(apples_level_buffer);
         g_increase_menu_index1 = new_entry("+ 1", increase_apples);
         g_decrease_menu_index1 = new_entry("- 1", decrease_apples);
-        new_entry("Max Apples", max_apples);
+        new_entry_with_note("Max Apples", applesnote, max_apples);
     exit_spoiler();
     new_spoiler("Fire Fragment Codes");
         new_unselectable_entry(fireF_level_buffer);
         g_increase_menu_index2 = new_entry("+ 1", increase_fireF);
         g_decrease_menu_index2 = new_entry("- 1", decrease_fireF);
-        new_entry("Max Fire Fragments", max_fireF);
+        new_entry_with_note("Max Fire Fragments", Fragnote, max_fireF);
     exit_spoiler();
     new_spoiler("Water Fragment Codes");
         new_unselectable_entry(waterF_level_buffer);
         g_increase_menu_index3 = new_entry("+ 1", increase_waterF);
         g_decrease_menu_index3 = new_entry("- 1", decrease_waterF);
-        new_entry("Max Water Fragments", max_waterF);
+        new_entry_with_note("Max Water Fragments", Fragnote, max_waterF);
     exit_spoiler();
     new_spoiler("Light Fragment Codes");
         new_unselectable_entry(lightF_level_buffer);
         g_increase_menu_index4 = new_entry("+ 1", increase_lightF);
         g_decrease_menu_index4 = new_entry("- 1", decrease_lightF);
-        new_entry("Max Light Fragments", max_lightF);
+        new_entry_with_note("Max Light Fragments", Fragnote, max_lightF);
     exit_spoiler();
     new_spoiler("Rare Fragment Codes");
         new_unselectable_entry(rareF_level_buffer);
         g_increase_menu_index5 = new_entry("+ 1", increase_rareF);
         g_decrease_menu_index5 = new_entry("- 1", decrease_rareF);
-        new_entry("Max Rare Fragments", max_rareF);
+        new_entry_with_note("Max Rare Fragments", Fragnote, max_rareF);
     exit_spoiler();
+	new_spoiler("Equipment Unlockers");
+		new_unselectable_entry("Equipment = Weapons & Armour");
+		new_radio_entry_with_note("All Equipment is Bought and DX", boughtDXnote, BoughtEquimentDX);
+		new_radio_entry_with_note("All Equipment can be Bought", CanBuynote, UnlockEquipment);
+		new_radio_entry_with_note("All Equipment can be Bought as DX", CanBuyDXnote, UnlockEquipmentDX);
+	exit_spoiler();
+	    new_spoiler("Codex Level Modifiers");
+        new_unselectable_entry(BookLVL_level_buffer);
+        g_increase_menu_index6 = new_entry("+ 1", increase_BookLVL);
+        g_decrease_menu_index6 = new_entry("- 1", decrease_BookLVL);
+    exit_spoiler();
+	new_entry_with_note("Max Tree Size", Treenote, TreeSizer);
+	new_entry_with_note("Infinite Vigour", infVignote, infVigour);
+	new_entry_with_note("Complete Every Achievement", AllAchnote, AllAchieve);
+	new_entry_with_note("Complete Wireless & Password Achievements", AchPassWirenote, AchieveWirePass);
+	new_entry_with_note("Infinite Potions & EXP Orbs", Sup99note, MaxSupportItems);
+	new_entry_with_note("+ 1000 Exp", EXPnote, Exp1000);
+
+
+
 }
 
 void    my_menus(void)
