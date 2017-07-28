@@ -8,7 +8,7 @@ Visit The GbaTemp Thread for a tutorial on how to use this plugin :)
 
 
 Have any suggestions regarding the plugin? Comment in the GbaTemp Thread Here:
-https://
+https://gbatemp.net/threads/445094/
 
 If anyone needs help, PM me on GbaTemp @ Slattz :)
 
